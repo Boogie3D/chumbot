@@ -31,9 +31,7 @@ classifiers = [
 ]
 [tool.poetry.dependencies]
 python = "^3.7"
-opuslib = "~2.0.0"
-protobuf = "~3.19.3"
-pymumble = {git = "https://github.com/Boogie3D/pymumble.git", rev = "pymumble_py3"}
+pymumble = "^1.6.1"
 
 [tool.poetry.dev-dependencies]
 pylama = "^7.7"
