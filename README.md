@@ -18,7 +18,7 @@ the following command within the project directory:
 `poetry install`
 
 ## Usage
-Chumbot is run from the command line. Audio clips should be stored in mp3 format.
+The Chumbot interactive shell is run from the command line. Audio clips should be stored in mp3 format.
 ```
 usage: chumbot [-h] [-u USERNAME] [-H HOST] [-P PORT] [-p PASSWORD] [-d]
 
@@ -34,6 +34,18 @@ options:
                         specify the Mumble host password
   -d, --debug           enable debug message printing
 ```
+
+Once connected, Chumbot's default behavior is to move to the channel with the most users. Chumbot can be moved manually
+by turning off auto-move and using the `move` command from the interactive shell. (See the
+[ChumShell](https://github.com/Boogie3D/chumbot/blob/main/chumbot/backend/chumshell.py) for a list of all commands.)
+
+Mumble users can interact with Chumbot by simply typing the names of audio clips (no extension) into the Mumble text chat.
+Multiple clips can be queued sequentially by typing them comma-separated (white-space does not matter). Up to 10 clips can
+be queued at once, by default. Typing a `*` character will play a random sound. If only one random sound is played, the name
+of that sound clip will be displayed in Mumble text chat.
+
+Mumble users can type `list` into Mumble chat to make Chumbot print the list of all clips into Mumble chat, broken up into segments of up to 50 clips per message, by default, due
+to character limits. Users can type `?string` to display a list of all sound clips containing `string` in text chat.
 
 ## Configuration
 Chumbot configuration is stored in `~/.config/chumbot.ini`. Chumbot must be configured to know where
