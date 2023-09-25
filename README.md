@@ -40,7 +40,7 @@ by turning off auto-move and using the `move` command from the interactive shell
 [ChumShell](https://github.com/Boogie3D/chumbot/blob/main/chumbot/backend/chumshell.py) for a list of all commands.)
 
 Mumble users can interact with Chumbot by simply typing the names of audio clips (no extension) into the Mumble text chat.
-Multiple clips can be queued sequentially by typing them comma-separated (white-space does not matter). Up to 10 clips can
+Multiple clips can be queued sequentially by typing them comma (`,`)-separated (white-space does not matter). Up to 10 clips can
 be queued at once, by default. Typing a `*` character will play a random sound. If only one random sound is played, the name
 of that sound clip will be displayed in Mumble text chat.
 
