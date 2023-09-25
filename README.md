@@ -1,14 +1,14 @@
 # Chumbot
 The Conveying Harmonies Unto Mumble Bot, or Chumbot, is a Mumble soundboard and notification bot
-written in Python 3. Chumbot relies on a fork of the
-[PYMUMBLE](https://github.com/azlux/pymumble/tree/pymumble_py3) API,
-which requires the `opuslib` and `protobuf` Python libraries.
+written in Python 3. Chumbot relies on the [PYMUMBLE](https://pypi.org/project/pymumble/) API,
+which requires the `opuslib` and `protobuf` Python libraries as well as `libopus` being available
+on the host machine.
 
 Chumbot is currently not supported on Windows.
 
 ## Installation
 ### For users
-The Chumbot client can be installed via pip:
+The Chumbot client can be installed via [pip](https://pypi.org/project/chumbot/):
 
 `pip install chumbot`
 
