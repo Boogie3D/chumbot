@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "chumbot"
-version = "0.7.2"
+version = "0.7.3"
 description = "A chummy soundboard bot client for Mumble."
 authors = ["Steven Anaya <anayastevenr@gmail.com>"]
 
@@ -13,6 +13,7 @@ homepage = "https://github.com/Boogie3D/chumbot"
 keywords = [
 	"mumble",
 	"bot",
+	"pymumble",
 	"sound",
 	"soundboard",
 	"meme"
